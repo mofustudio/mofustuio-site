@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Mofu Studio</title>
-<meta name="description" content="Enquire about Mofu Studio handmade rugs. Prices quoted directly on a call.">
+<title>Our Story | Mofu Studio</title>
+<meta name="description" content="Three friends from Agra bringing India's finest handmade rugs to the Nordics.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -227,13 +227,17 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
 .founders{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:clamp(18px,2.5vw,30px); margin-top:clamp(30px,5vw,50px); }
 .founder{ border-top:2px solid var(--indigo); padding-top:1rem; }
 .founder h3{ font-size:1.3rem; }
-.founder .role{ font-size:.85rem; color:var(--ink-soft); margin-top:.15rem; }
+.founder .role{ font-size:.95rem; color:var(--ink); margin:.35rem 0 0; font-weight:500; }
+.founder .loc{ font-size:.85rem; color:var(--ink-soft); margin:.15rem 0 0; }
+
+.team-photo{ margin:clamp(30px,5vw,52px) 0 0; }
+.team-photo img{ width:100%; border:1px solid var(--line); border-radius:2px; object-fit:cover; }
+.team-photo figcaption{ font-size:.85rem; color:var(--ink-soft); margin-top:.7rem; font-style:italic; }
 
 /* ============================================================
    Contact page
    ============================================================ */
-.contact-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(30px,5vw,64px); align-items:start; }
-@media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+.contact-single{ max-width:620px; margin-inline:auto; }
 .contact-card{ border:1px solid var(--line); border-radius:2px; padding:clamp(22px,3vw,34px); background:var(--paper); }
 .contact-card .label{ font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; }
 .contact-card .big{ font-family:var(--display); font-size:clamp(1.4rem,2.4vw,1.9rem); margin:.3rem 0 0; word-break:break-word; }
@@ -285,16 +289,16 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
   <div class="wrap">
     <a class="brand" href="index.html"><b>Mofu Studio</b><span>Handmade rugs</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav" aria-expanded="false"><span></span></button>
-    <nav class="nav" id="nav"><a href="index.html">Home</a><a href="story.html">Our story</a><a href="contact.html" aria-current="page">Contact</a></nav>
+    <nav class="nav" id="nav"><a href="index.html">Home</a><a href="story.html" aria-current="page">Our story</a><a href="contact.html">Contact</a></nav>
   </div>
 </header>
 <main>
 <section class="hero" style="padding-bottom:clamp(30px,5vw,60px);">
   <div class="warp" aria-hidden="true"></div>
   <div class="wrap">
-    <p class="eyebrow">Contact</p>
-    <h1>Let's talk rugs.</h1>
-    <p class="lead">Tell us the designs, sizes and volumes you're interested in. We'll come back with a quote and, when it's the right fit, arrange a call.</p>
+    <p class="eyebrow">Our story</p>
+    <h1>We grew up inside the loom's reach.</h1>
+    <p class="lead">Sanchit, Ekansh and Himanshu were born and raised in Agra, a childhood spent within a few hours of nearly every great weaving town in India.</p>
   </div>
 </section>
 
@@ -302,53 +306,56 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
 
 <section class="section">
   <div class="wrap">
-    <div class="contact-grid">
-      <!-- LEFT: direct details -->
-      <div class="reveal">
-        <div class="contact-card">
-          <p class="label">Email us</p>
-          <p class="big"><a href="mailto:hello@mofustudio.ai">hello@mofustudio.ai</a></p>
-          <div class="contact-row">
-            <div>
-              <p class="label">Atlanta</p>
-              <p style="margin:.3rem 0 0;">Sanchit · United States</p>
-            </div>
-            <div>
-              <p class="label">London</p>
-              <p style="margin:.3rem 0 0;">Ekansh · United Kingdom</p>
-            </div>
-            <div>
-              <p class="label">Bangalore</p>
-              <p style="margin:.3rem 0 0;">Himanshu · India</p>
-            </div>
-          </div>
-        </div>
-        <p class="lead" style="margin-top:1.6rem;">Prices are decided on a call, not listed — every order is quoted to your sizes and materials.</p>
+    <div class="story-block reveal">
+      <p>From Agra, the craft surrounds you. Drive a little in any direction and you arrive at a loom that has been running for generations. We watched wool become knots, and knots become rugs, long before we knew it would become our work.</p>
+    </div>
+
+    <div class="geo reveal">
+      <div><p class="dir">East</p><p class="place">Bhadohi &amp; Mirzapur</p></div>
+      <div><p class="dir">West</p><p class="place">Jaipur</p></div>
+      <div><p class="dir">North</p><p class="place">Panipat</p></div>
+      <div><p class="dir">Far north</p><p class="place">Srinagar, Kashmir</p></div>
+    </div>
+
+    <div class="story-block reveal">
+      <p>Bhadohi and Mirzapur, a stretch to the east, are the heart of India's hand-knotted trade. Jaipur, to the west, carries centuries of colour and pattern. Panipat, to the north, is where much of the country's woven flooring is finished. And far to the north, Kashmir gives us the fine silk-and-wool knots that take a weaver months to complete.</p>
+    </div>
+
+    <div class="story-block reveal">
+      <p>Today the three of us live on three continents. What we share is the same conviction we grew up with: that a rug made by hand, by people who have done it their whole lives, is one of the finest objects a home can hold. Mofu Studio exists to put those rugs in front of the buyers who value them most.</p>
+    </div>
+
+    <figure class="team-photo reveal">
+      <img src="images/founders.jpg" alt="The three founders of Mofu Studio" loading="lazy">
+      <figcaption>The three of us, back home.</figcaption>
+    </figure>
+
+    <div class="founders reveal">
+      <div class="founder">
+        <h3>Sanchit</h3>
+        <p class="role">Consultant</p>
+        <p class="loc">Atlanta, United States</p>
       </div>
-
-      <!-- RIGHT: enquiry form (opens your email app pre-filled) -->
-      <div class="reveal">
-        <div class="contact-card">
-          <p class="label" style="margin-bottom:.4rem;">Send an enquiry</p>
-          <div class="form">
-            <label for="f-name">Your name</label>
-            <input id="f-name" type="text" autocomplete="name" placeholder="Jane Andersen">
-
-            <label for="f-company">Company</label>
-            <input id="f-company" type="text" autocomplete="organization" placeholder="Store or studio name">
-
-            <label for="f-email">Email</label>
-            <input id="f-email" type="email" autocomplete="email" placeholder="you@company.com">
-
-            <label for="f-message">What are you looking for?</label>
-            <textarea id="f-message" placeholder="Designs, sizes, quantities, timelines…"></textarea>
-
-            <a id="f-send" class="btn btn-primary" href="#">Compose email <span class="arw">&rarr;</span></a>
-            <p class="hint">This opens your email app with the details filled in, addressed to hello@mofustudio.ai.</p>
-          </div>
-        </div>
+      <div class="founder">
+        <h3>Ekansh</h3>
+        <p class="role">Entrepreneur</p>
+        <p class="loc">London, United Kingdom</p>
+      </div>
+      <div class="founder">
+        <h3>Himanshu</h3>
+        <p class="role">Doctor</p>
+        <p class="loc">Bangalore, India</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section alt callband">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="justify-content:center;">The craft, worldwide</p>
+    <h2>Made where it was born. Sent where it's loved.</h2>
+    <p class="lead" style="margin-inline:auto;">We're building Mofu Studio for buyers across Norway, Sweden and Finland who want the real thing, woven to order and quoted directly.</p>
+    <a class="btn btn-primary" href="contact.html">Talk to us <span class="arw">&rarr;</span></a>
   </div>
 </section>
 
@@ -408,7 +415,7 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
       ev.preventDefault();
       var g = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
       var name = g('f-name'), company = g('f-company'), email = g('f-email'), msg = g('f-message');
-      var subject = 'Rug enquiry' + (company ? ' — ' + company : '');
+      var subject = 'Rug enquiry' + (company ? ': ' + company : '');
       var body =
         'Name: ' + name + '\n' +
         'Company: ' + company + '\n' +
