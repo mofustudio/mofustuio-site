@@ -65,6 +65,13 @@ h1,h2,h3{ font-family:var(--display); font-weight:400; line-height:1.06; letter-
 h1{ font-size:clamp(2.6rem,6.4vw,5rem); }
 h2{ font-size:clamp(2rem,4.4vw,3.3rem); }
 h3{ font-size:1.28rem; letter-spacing:-.01em; }
+
+.badge{
+  display:inline-block; vertical-align:middle; transform:translateY(-.18em);
+  font-family:var(--body); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase;
+  font-weight:600; color:var(--paper); background:var(--indigo);
+  padding:.34rem .68rem; border-radius:100px; margin-left:.7rem;
+}
 p{ margin:0 0 1.1rem; max-width:62ch; }
 .lead{ font-size:clamp(1.08rem,1.7vw,1.32rem); color:var(--ink-soft); line-height:1.6; }
 
@@ -399,18 +406,18 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
 <section class="section alt" id="catalogue-02">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Catalogue 02 · Coming soon</p>
-      <h2>Geometric Minimalism</h2>
-      <p class="lead">Two clean, geometric designs are on the loom, pared back for modern Nordic interiors. Ask us for an early preview.</p>
+      <p class="eyebrow">Catalogue 02</p>
+      <h2>Geometric Minimalism <span class="badge">Coming soon</span></h2>
+      <p class="lead">Clean, geometric designs are on the loom, stripped back for modern Nordic interiors. Ask us for an early preview.</p>
     </div>
     <div class="cat-grid reveal" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-width:640px;">
-      <article class="rug soon">
-        <div class="plate"><span class="num">01</span><img src="Geometrical%201.jpeg" alt="Geometric design one" loading="lazy"></div>
-        <div class="meta"><h3>Design One</h3><p class="loc">Revealed shortly</p></div>
+      <article class="rug">
+        <div class="plate"><span class="num">01</span><img src="Geometrical2.jpeg" alt="Eclipse rug design" loading="lazy"></div>
+        <div class="meta"><h3>Eclipse</h3></div>
       </article>
-      <article class="rug soon">
-        <div class="plate"><span class="num">02</span><img src="Geometrical2.jpeg" alt="Geometric design two" loading="lazy"></div>
-        <div class="meta"><h3>Design Two</h3><p class="loc">Revealed shortly</p></div>
+      <article class="rug">
+        <div class="plate"><span class="num">02</span><img src="Geometrical%201.jpeg" alt="Keystone rug design" loading="lazy"></div>
+        <div class="meta"><h3>Keystone</h3></div>
       </article>
     </div>
   </div>
