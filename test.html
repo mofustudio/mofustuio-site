@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image test</title>
+<style>
+  body{font-family:-apple-system,sans-serif;padding:12px}
+  .t{margin:0 0 18px}
+  .t img{width:140px;height:auto;display:block;border:1px solid #ccc}
+  .s{font-size:13px;margin-top:4px}
+  .ok{color:green}.bad{color:red;font-weight:bold}
+</style>
+</head>
+<body>
+<h2>Mofu image diagnostic</h2>
+<p>Scroll to the bottom. Every line should say OK. Report any FAILED lines.</p>
+<div id="out"></div>
+<script>
+var files = [
+ "Amalfi1.jpeg","Colosseum.jpeg","EiffelTower.jpeg","Fuji.jpeg","GoldenGate.jpeg",
+ "IceLandBlackSand.jpeg","KyotoGarden.jpeg","Machu_Picchu.jpeg","NorthernLights.jpeg",
+ "Norwegian_Fjords 2.jpeg","Petra.jpeg","Sahara.jpeg","Santorini.jpeg",
+ "Scottish_Highlands.jpeg","pyramids.jpeg",
+ "Geometrical 1.jpeg","Geometrical2.jpeg"
+];
+var out = document.getElementById('out');
+files.forEach(function(f, i){
+  var wrap = document.createElement('div'); wrap.className='t';
+  var img = new Image();
+  var s = document.createElement('div'); s.className='s'; s.textContent = (i+1)+'. '+f+' : loading...';
+  img.onload = function(){ s.textContent = (i+1)+'. '+f+' : OK ('+img.naturalWidth+'x'+img.naturalHeight+')'; s.className='s ok'; };
+  img.onerror = function(e){ s.textContent = (i+1)+'. '+f+' : FAILED'; s.className='s bad'; };
+  img.src = encodeURI(f) + '?d=' + Date.now();
+  wrap.appendChild(img); wrap.appendChild(s); out.appendChild(wrap);
+});
+</script>
+</body>
+</html>
