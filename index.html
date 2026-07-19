@@ -180,20 +180,13 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
 
 .rug{ position:relative; }
 .rug .plate{
-  position:relative; aspect-ratio:4/5; overflow:hidden; border:1px solid var(--line);
+  position:relative; overflow:hidden; border:1px solid var(--line);
   background:
     linear-gradient(135deg, color-mix(in srgb,var(--indigo) 8%, var(--paper)), var(--paper-deep));
-  border-radius:2px;
+  border-radius:2px; min-height:120px;
 }
-/* woven texture placeholder — swap for a real <img> */
-.rug .plate::before{
-  content:""; position:absolute; inset:0; opacity:.5;
-  background-image:
-    repeating-linear-gradient(90deg, rgba(40,54,82,.10) 0 2px, transparent 2px 6px),
-    repeating-linear-gradient(0deg,  rgba(40,54,82,.07) 0 2px, transparent 2px 6px);
-  background-size:6px 6px;
-}
-.rug .plate img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+/* Plain-flow image: no aspect-ratio, no absolute positioning (iOS Safari safe) */
+.rug .plate img{ display:block; width:100%; height:auto; }
 .rug .plate .num{
   position:absolute; top:12px; left:12px; z-index:2;
   font-family:var(--display); font-size:.9rem; color:var(--ink-soft);
