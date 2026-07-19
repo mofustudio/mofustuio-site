@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mofu Studio — the finest handmade rugs from India, for Nordic buyers</title>
+<title>Mofu Studio | The finest handmade rugs from India, for Nordic buyers</title>
 <meta name="description" content="Hand-knotted and hand-tufted rugs woven to order in India, for buyers in Norway, Sweden and Finland.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
@@ -227,13 +227,17 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
 .founders{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:clamp(18px,2.5vw,30px); margin-top:clamp(30px,5vw,50px); }
 .founder{ border-top:2px solid var(--indigo); padding-top:1rem; }
 .founder h3{ font-size:1.3rem; }
-.founder .role{ font-size:.85rem; color:var(--ink-soft); margin-top:.15rem; }
+.founder .role{ font-size:.95rem; color:var(--ink); margin:.35rem 0 0; font-weight:500; }
+.founder .loc{ font-size:.85rem; color:var(--ink-soft); margin:.15rem 0 0; }
+
+.team-photo{ margin:clamp(30px,5vw,52px) 0 0; }
+.team-photo img{ width:100%; border:1px solid var(--line); border-radius:2px; object-fit:cover; }
+.team-photo figcaption{ font-size:.85rem; color:var(--ink-soft); margin-top:.7rem; font-style:italic; }
 
 /* ============================================================
    Contact page
    ============================================================ */
-.contact-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(30px,5vw,64px); align-items:start; }
-@media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+.contact-single{ max-width:620px; margin-inline:auto; }
 .contact-card{ border:1px solid var(--line); border-radius:2px; padding:clamp(22px,3vw,34px); background:var(--paper); }
 .contact-card .label{ font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; }
 .contact-card .big{ font-family:var(--display); font-size:clamp(1.4rem,2.4vw,1.9rem); margin:.3rem 0 0; word-break:break-word; }
@@ -321,67 +325,66 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
     </div>
 
     <div class="cat-grid reveal">
-      <!-- To use a real photo, replace the .plate contents with:
-           <img src="images/santorini.jpg" alt="Santorini rug design"> -->
+      <!-- Each card shows images/<slug>.jpg. Upload one photo per design with the matching name. -->
       <article class="rug">
-        <div class="plate"><span class="num">01</span></div>
-        <div class="meta"><h3>Santorini</h3><p class="loc">Cyclades, Greece</p></div>
+        <div class="plate"><span class="num">01</span><img src="images/Norwegian_Fjords2.jpeg" alt="Norwegian Fjords rug design" loading="lazy"></div>
+        <div class="meta"><h3>Norwegian Fjords</h3><p class="loc">Vestland, Norway</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">02</span></div>
-        <div class="meta"><h3>Kyoto</h3><p class="loc">Kansai, Japan</p></div>
+        <div class="plate"><span class="num">02</span><img src="images/NorthernLights.jpeg" alt="Northern Lights rug design" loading="lazy"></div>
+        <div class="meta"><h3>Northern Lights</h3><p class="loc">Tromso, Norway</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">03</span></div>
-        <div class="meta"><h3>Moraine Lake</h3><p class="loc">Alberta, Canada</p></div>
+        <div class="plate"><span class="num">03</span><img src="images/Colosseum.jpeg" alt="Colosseum rug design" loading="lazy"></div>
+        <div class="meta"><h3>Colosseum</h3><p class="loc">Rome, Italy</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">04</span></div>
+        <div class="plate"><span class="num">04</span><img src="images/Machu_Picchu.jpeg" alt="Machu Picchu rug design" loading="lazy"></div>
+        <div class="meta"><h3>Machu Picchu</h3><p class="loc">Cusco, Peru</p></div>
+      </article>
+      <article class="rug">
+        <div class="plate"><span class="num">05</span><img src="images/Sahara.jpeg" alt="Sahara rug design" loading="lazy"></div>
+        <div class="meta"><h3>Sahara</h3><p class="loc">North Africa</p></div>
+      </article>
+      <article class="rug">
+        <div class="plate"><span class="num">06</span><img src="images/Fuji.jpeg" alt="Mount Fuji rug design" loading="lazy"></div>
+        <div class="meta"><h3>Fuji</h3><p class="loc">Honshu, Japan</p></div>
+      </article>
+      <article class="rug">
+        <div class="plate"><span class="num">07</span><img src="images/Amalfi1.jpeg" alt="Amalfi rug design" loading="lazy"></div>
         <div class="meta"><h3>Amalfi</h3><p class="loc">Campania, Italy</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">05</span></div>
-        <div class="meta"><h3>Lofoten</h3><p class="loc">Nordland, Norway</p></div>
+        <div class="plate"><span class="num">08</span><img src="images/Santorini.jpeg" alt="Santorini rug design" loading="lazy"></div>
+        <div class="meta"><h3>Santorini</h3><p class="loc">Cyclades, Greece</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">06</span></div>
-        <div class="meta"><h3>Patagonia</h3><p class="loc">Santa Cruz, Argentina</p></div>
+        <div class="plate"><span class="num">09</span><img src="images/EiffelTower.jpeg" alt="Paris rug design" loading="lazy"></div>
+        <div class="meta"><h3>Paris</h3><p class="loc">Ile-de-France, France</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">07</span></div>
-        <div class="meta"><h3>Cappadocia</h3><p class="loc">Nevşehir, Türkiye</p></div>
+        <div class="plate"><span class="num">10</span><img src="images/Petra.jpeg" alt="Petra rug design" loading="lazy"></div>
+        <div class="meta"><h3>Petra</h3><p class="loc">Ma'an, Jordan</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">08</span></div>
-        <div class="meta"><h3>Dal Lake</h3><p class="loc">Srinagar, Kashmir</p></div>
+        <div class="plate"><span class="num">11</span><img src="images/Scottish_Highlands.jpeg" alt="Scottish Highlands rug design" loading="lazy"></div>
+        <div class="meta"><h3>Scottish Highlands</h3><p class="loc">Scotland, UK</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">09</span></div>
-        <div class="meta"><h3>Cinque Terre</h3><p class="loc">Liguria, Italy</p></div>
+        <div class="plate"><span class="num">12</span><img src="images/GoldenGate.jpeg" alt="Golden Gate rug design" loading="lazy"></div>
+        <div class="meta"><h3>Golden Gate</h3><p class="loc">San Francisco, USA</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">10</span></div>
-        <div class="meta"><h3>Faroe Islands</h3><p class="loc">North Atlantic, Denmark</p></div>
+        <div class="plate"><span class="num">13</span><img src="images/IceLandBlackSand.jpeg" alt="Iceland rug design" loading="lazy"></div>
+        <div class="meta"><h3>Iceland</h3><p class="loc">Highlands, Iceland</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">11</span></div>
-        <div class="meta"><h3>Zermatt</h3><p class="loc">Valais, Switzerland</p></div>
+        <div class="plate"><span class="num">14</span><img src="images/pyramids.jpeg" alt="Pyramids rug design" loading="lazy"></div>
+        <div class="meta"><h3>Pyramids</h3><p class="loc">Giza, Egypt</p></div>
       </article>
       <article class="rug">
-        <div class="plate"><span class="num">12</span></div>
-        <div class="meta"><h3>Marrakech</h3><p class="loc">Marrakesh-Safi, Morocco</p></div>
-      </article>
-      <article class="rug">
-        <div class="plate"><span class="num">13</span></div>
-        <div class="meta"><h3>Kerala Backwaters</h3><p class="loc">Kerala, India</p></div>
-      </article>
-      <article class="rug">
-        <div class="plate"><span class="num">14</span></div>
-        <div class="meta"><h3>Ha Long Bay</h3><p class="loc">Quảng Ninh, Vietnam</p></div>
-      </article>
-      <article class="rug">
-        <div class="plate"><span class="num">15</span></div>
-        <div class="meta"><h3>Northern Lights</h3><p class="loc">Tromsø, Norway</p></div>
+        <div class="plate"><span class="num">15</span><img src="images/KyotoGarden.jpeg" alt="Kyoto Garden rug design" loading="lazy"></div>
+        <div class="meta"><h3>Kyoto Garden</h3><p class="loc">Kyoto, Japan</p></div>
       </article>
     </div>
 
@@ -398,15 +401,15 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
     <div class="sec-head reveal">
       <p class="eyebrow">Catalogue 02 · Coming soon</p>
       <h2>Geometric Minimalism</h2>
-      <p class="lead">Two clean, geometric designs are on the loom — pared back for modern Nordic interiors. Ask us for an early preview.</p>
+      <p class="lead">Two clean, geometric designs are on the loom, pared back for modern Nordic interiors. Ask us for an early preview.</p>
     </div>
     <div class="cat-grid reveal" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-width:640px;">
       <article class="rug soon">
-        <div class="plate"><span class="num">01</span></div>
+        <div class="plate"><span class="num">01</span><img src="images/Geometrical1.jpeg" alt="Geometric design one" loading="lazy"></div>
         <div class="meta"><h3>Design One</h3><p class="loc">Revealed shortly</p></div>
       </article>
       <article class="rug soon">
-        <div class="plate"><span class="num">02</span></div>
+        <div class="plate"><span class="num">02</span><img src="images/Geometrical2.jpeg" alt="Geometric design two" loading="lazy"></div>
         <div class="meta"><h3>Design Two</h3><p class="loc">Revealed shortly</p></div>
       </article>
     </div>
@@ -480,7 +483,7 @@ p{ margin:0 0 1.1rem; max-width:62ch; }
       ev.preventDefault();
       var g = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
       var name = g('f-name'), company = g('f-company'), email = g('f-email'), msg = g('f-message');
-      var subject = 'Rug enquiry' + (company ? ' — ' + company : '');
+      var subject = 'Rug enquiry' + (company ? ': ' + company : '');
       var body =
         'Name: ' + name + '\n' +
         'Company: ' + company + '\n' +
